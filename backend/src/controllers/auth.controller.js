@@ -4,6 +4,7 @@ import bcrypt from "bcryptjs";
 
 export const signup = async (req, res) => {
   const { fullName, email, password } = req.body;
+
   try {
     if (!fullName || !email || !password) {
       return res.status(400).json({ message: "Please fill in all fields." });
@@ -43,7 +44,7 @@ export const signup = async (req, res) => {
 export const login = async (req, res) => {
   const { email, password } = req.body;
   try {
-    const user = User.findOne({ email });
+    const user = await User.findOne({ email });
     if (!user) {
       return res.status(400).json({ message: "Invalid Creadentials" });
     }
@@ -76,6 +77,4 @@ export const logout = (req, res) => {
   }
 };
 
-export const updateProfile=async(req,res)=>{
-  
-}
+export const updateProfile = async (req, res) => {};
