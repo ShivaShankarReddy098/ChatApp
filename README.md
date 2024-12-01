@@ -3,8 +3,7 @@
 A fully functional real-time chat application built using modern web development technologies, providing secure user authentication, real-time messaging, online user tracking, and a responsive UI.
 
 ## Live
-
-       https://chatapp-uv4h.onrender.com
+[Live](https://chatapp-uv4h.onrender.com)
 
 ## Features
 
